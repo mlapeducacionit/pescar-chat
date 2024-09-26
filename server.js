@@ -4,7 +4,7 @@ import { Server } from 'socket.io'
 
 // ! Constantes/Variables
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT
 
 // ! Agrego la librería socket.io
 const server = createServer(app)
